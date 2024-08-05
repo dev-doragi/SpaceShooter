@@ -215,15 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_01
+      name: Flame_01
       rect:
         serializedVersion: 2
         x: 6
         y: 76
         width: 18
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,15 +299,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_02
+      name: Flame_02
       rect:
         serializedVersion: 2
         x: 6
         y: 66
         width: 18
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 1, y: 0.4836748}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,15 +362,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrow_03
+      name: Flame_03
       rect:
         serializedVersion: 2
         x: 2
         y: 55
         width: 22
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 1, y: 0.4836752}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -582,9 +582,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Arrow_01: 527314695
-      Arrow_02: 64403410
-      Arrow_03: -1024284435
       Arrow_04: 1399135035
       Comet_01: 1786836736
       Comet_02: 513512920
@@ -597,6 +594,9 @@ TextureImporter:
       Enemy_01: 2125985296
       Enemy_02: -802420535
       Enemy_03: -1789225805
+      Flame_01: 527314695
+      Flame_02: 64403410
+      Flame_03: -1024284435
       Item_01: 1267432972
       Item_02: 1647706457
       Item_03: 611063140
