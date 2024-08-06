@@ -19,19 +19,33 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") && !isEnemy)
         {
             Instantiate(dieImpact, transform.position, transform.rotation);
             Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("Player") && isEnemy)
-        {
-            Destroy(other.gameObject);
-            Instantiate(dieImpact, transform.position, transform.rotation);
         }
 
-        Instantiate(bulletImpact, transform.position, transform.rotation);
-        Destroy(gameObject);   
+        else if (other.CompareTag("Player"))
+        {
+            if (isEnemy)
+            {
+                Destroy(other.gameObject);
+                Instantiate(dieImpact, transform.position, transform.rotation);
+            }
+
+        }
+
+        else if (other.CompareTag("Bullet"))
+        {
+            Debug.Log("Hit");
+            Destroy(other.gameObject);
+        }
+
+        else
+        {
+            Instantiate(bulletImpact, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     }
 
     private void OnBecameInvisible()

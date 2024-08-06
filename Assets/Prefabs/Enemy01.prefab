@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3468987611449491574}
   - component: {fileID: 2645674856314844053}
   - component: {fileID: 2552431532795528415}
-  - component: {fileID: 3998061696452338191}
   - component: {fileID: 7276572011532918157}
+  - component: {fileID: 3998061696452338191}
   m_Layer: 0
   m_Name: Enemy01
   m_TagString: Enemy
@@ -146,7 +146,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -177,18 +177,6 @@ MonoBehaviour:
   moveSpeedX: -3
   moveSpeedY: -2
   rotateSpeed: 0
---- !u!114 &3998061696452338191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088427809098092414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 475ddcf4ff95cca48888b9555506e7fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7276572011532918157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +192,19 @@ MonoBehaviour:
   shotDelay: 0.5
   bullet: {fileID: 8453185294875451595, guid: 2b427e1aed2b4da41888ac4cabc59cec, type: 3}
   bulletPoint: {fileID: 7460015854971400685}
+--- !u!114 &3998061696452338191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088427809098092414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475ddcf4ff95cca48888b9555506e7fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
 --- !u!1 &7049364714699696820
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8920703570146772812}
   m_Layer: 0
   m_Name: EnemyLaser
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -145,5 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: -12
   bulletImpact: {fileID: 150009187002679798, guid: c9513e8cee175fc418d10bfcbb3885fe, type: 3}
-  dieImpact: {fileID: 150009187002679798, guid: f4076a6abca16c04085ec564386e7a54, type: 3}
+  dieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   isEnemy: 1
