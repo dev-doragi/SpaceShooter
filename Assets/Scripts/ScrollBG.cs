@@ -7,13 +7,11 @@ public class ScrollBG : MonoBehaviour
     public float scrollSpeed;
     private Renderer rend;
 
-    // Start is called before the first frame update
     void Start()
     {
         rend = GetComponent<Renderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float offset = Time.time * scrollSpeed;

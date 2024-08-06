@@ -15,14 +15,18 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
 
-    // Start is called before the first frame update
+    public GameObject bullet;
+    public Transform bulletPoint;
+
+    public float shotDelay; // 레이저 쿨타임
+    private float shotCounter;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -34,5 +38,24 @@ public class PlayerController : MonoBehaviour
                                          transform.position.z);
 
         anim.SetFloat("Movement", moveInput.y);
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(bullet, bulletPoint.position, bulletPoint.rotation);
+
+            shotCounter = shotDelay;
+        }
+
+        if (Input.GetButton("Fire1"))
+        {
+            shotCounter -= Time.deltaTime;
+
+            if (shotCounter <= 0)
+            {
+                Instantiate(bullet, bulletPoint.position, bulletPoint.rotation);
+
+                shotCounter = shotDelay;
+            }
+        }
     }
 }
