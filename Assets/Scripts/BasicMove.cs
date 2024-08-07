@@ -12,12 +12,13 @@ public class BasicMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(Random.Range(moveSpeedX/3f, moveSpeedX), moveSpeedY);
+        rb.velocity = new Vector2(Random.Range(moveSpeedX/2f, moveSpeedX), moveSpeedY);
     }
 
     void Update()
     {
         transform.rotation = Quaternion.Euler(0f, 0f, transform.rotation.eulerAngles.z + (Random.Range(rotateSpeed/5f, rotateSpeed) * Time.deltaTime));
+        
     }
 
     private void OnBecameInvisible()

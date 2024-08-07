@@ -162,7 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfef3dd8e39943c488021086b53ef4a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: -5
+  moveSpeedX: 0
+  moveSpeedY: 0
   rotateSpeed: 30
 --- !u!114 &4867016013571553307
 MonoBehaviour:
@@ -176,3 +177,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475ddcf4ff95cca48888b9555506e7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}

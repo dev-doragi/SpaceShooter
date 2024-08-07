@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
 
     public float XTarget; // 특정 위치에 다다르면 어떻게 행동하라고 지침하기 위한 포인트
     public float YTarget;
-    public int moveType; // 0 - 아래로 움직임, 1 - 위로 움직임, 2 - 특정 위치로 움직임
+    public int moveType; // 0 - 아래로 이동, 1 - 위로 이동, 2 - 특정 위치로 이동, 3 - 특정 위치에서 정지
 
     public bool moveUp;
 
@@ -77,6 +77,17 @@ public class EnemyMovement : MonoBehaviour
                 else
                 {
                     rb.velocity = new Vector2(-moveSpeedX, 0f);
+                }
+                break;
+
+            case 3: // 특정 위치에서 정지
+                if (transform.position.x < XTarget)
+                {
+                    rb.velocity = new Vector2(-moveSpeedX / 400f, 0f);
+                }
+                else
+                {
+                    rb.velocity = new Vector2(-moveSpeedX, -moveSpeedY);
                 }
                 break;
         }

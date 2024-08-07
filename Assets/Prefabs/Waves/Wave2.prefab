@@ -52,7 +52,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: moveUp
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: XTarget
@@ -60,11 +60,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: YTarget
-      value: 3
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: moveType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
+      propertyPath: moveSpeedX
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6078334053373189520, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: m_Name
@@ -254,6 +258,10 @@ PrefabInstance:
       propertyPath: XTarget
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6142684360169982219, guid: 2567e565c7619a6479cf97f4128fae10, type: 3}
+      propertyPath: moveSpeedX
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -275,6 +283,10 @@ PrefabInstance:
     - target: {fileID: 4316001782574820416, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
       propertyPath: XTarget
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316001782574820416, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
+      propertyPath: moveSpeedX
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7360209109302347793, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,6 +398,10 @@ PrefabInstance:
       propertyPath: XTarget
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6142684360169982219, guid: 2567e565c7619a6479cf97f4128fae10, type: 3}
+      propertyPath: moveSpeedX
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -407,6 +423,10 @@ PrefabInstance:
     - target: {fileID: 4316001782574820416, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
       propertyPath: XTarget
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316001782574820416, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
+      propertyPath: moveSpeedX
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7360209109302347793, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -480,11 +500,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: YTarget
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: moveType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
+      propertyPath: moveSpeedX
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6078334053373189520, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: m_Name
@@ -596,6 +620,10 @@ PrefabInstance:
       propertyPath: XTarget
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6142684360169982219, guid: 2567e565c7619a6479cf97f4128fae10, type: 3}
+      propertyPath: moveSpeedX
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -620,11 +648,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: YTarget
-      value: -1
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: moveType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
+      propertyPath: moveSpeedX
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6078334053373189520, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: m_Name
@@ -690,7 +722,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: moveUp
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: XTarget
@@ -698,11 +730,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: YTarget
-      value: -3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: moveType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11995074614030219, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
+      propertyPath: moveSpeedX
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6078334053373189520, guid: fabe0fb852148af43ba18a2311a2ee3d, type: 3}
       propertyPath: m_Name
@@ -769,6 +805,10 @@ PrefabInstance:
     - target: {fileID: 4316001782574820416, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
       propertyPath: XTarget
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316001782574820416, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
+      propertyPath: moveSpeedX
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7360209109302347793, guid: aeb6d95dda7317f42974f82b2e832e16, type: 3}
       propertyPath: m_LocalPosition.x

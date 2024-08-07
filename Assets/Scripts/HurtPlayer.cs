@@ -10,7 +10,7 @@ public class HurtPlayer : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Instantiate(dieImpact, transform.position, transform.rotation);
+            Instantiate(dieImpact, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
         }
 

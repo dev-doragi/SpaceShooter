@@ -158,10 +158,13 @@ MonoBehaviour:
   - {fileID: 4854984211065237105, guid: fef68b4eacb3e124cb40a09120b255ee, type: 3}
   - {fileID: 6546853418699513920, guid: b93ffd3312d27fc4884b076c8e37e00f, type: 3}
   - {fileID: 3426926050814074169, guid: 5bdf0a43fafac144bb4a17c0cc552f57, type: 3}
+  - {fileID: 7778312237911896788, guid: ccecc3050c88e024bacae21d31330c65, type: 3}
   waveDelays:
   - 5
   - 10
   - 10
+  - 5
+  - 5
   spawningWaves: 1
   powerUps:
   - {fileID: 1931514054746783092, guid: 2c258e03e9d07eb4c985123bf01f423b, type: 3}
@@ -675,7 +678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6363232334692275308, guid: 805dbd236a2ba71468716a4458aba5ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.4
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 6363232334692275308, guid: 805dbd236a2ba71468716a4458aba5ec, type: 3}
       propertyPath: m_LocalPosition.y
