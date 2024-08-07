@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public float shotDelay; // 레이저 쿨타임
     private float shotCounter;
 
+    public GameObject shield;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

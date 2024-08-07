@@ -19,8 +19,10 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy") && !isEnemy)
+        if (other.CompareTag("Enemy"))
         {
+            FindObjectOfType<GameManager>().DropPowerUp(other.transform.position);
+
             Instantiate(dieImpact, transform.position, transform.rotation);
             Destroy(other.gameObject);
         }
@@ -35,10 +37,15 @@ public class BulletController : MonoBehaviour
 
         }
 
-        else if (other.CompareTag("Bullet"))
+        //else if (other.CompareTag("Bullet"))
+        //{
+        //    Debug.Log("Hit");
+        //    Destroy(other.gameObject);
+        //}
+
+        else if (other.CompareTag("Shield"))
         {
-            Debug.Log("Hit");
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
 
         else

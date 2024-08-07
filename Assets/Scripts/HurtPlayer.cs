@@ -12,6 +12,12 @@ public class HurtPlayer : MonoBehaviour
         {
             Instantiate(dieImpact, transform.position, transform.rotation);
             Destroy(other.gameObject);
-        }   
+        }
+
+        else if (other.gameObject.CompareTag("Shield"))
+        {
+            other.gameObject.SetActive(false);
+            Destroy(this.gameObject);
+        }
     }
 }
