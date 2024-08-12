@@ -53,6 +53,7 @@ public class BulletController : MonoBehaviour
             other.gameObject.SetActive(false);
             Instantiate(shieldBreak, other.transform.position, other.transform.rotation);
             AudioManager.instance.PlaySfx(AudioManager.Sfx_2.ShieldBreak);
+            FindObjectOfType<PlayerController>().OnDamaged();
             Destroy(this.gameObject);
             other.gameObject.SetActive(false);
         }

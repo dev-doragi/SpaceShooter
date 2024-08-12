@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public bool isLive;
     public Transform waveSpawnPoint;
 
     public GameObject[] waves;
@@ -22,13 +24,12 @@ public class GameManager : MonoBehaviour
     private float playerSpeed; // 플레이어 이동속도
     private PlayerController player;
 
-    public float speedMultiplier; // ?
+    public float speedMultiplier;
 
     public int playerLives;
     public Transform playerSpawnPoint;
 
     public float spawnDelay; // 스폰 쿨타임
-    private float spawnCounter;
 
     public GameObject dieImpact;
 
@@ -38,16 +39,21 @@ public class GameManager : MonoBehaviour
     public Text liveText;
     public Text scoreText;
 
-    public int currentScore;
-
     public GameObject bossBattle;
 
-    public int currentHiScore;
+    public int currentScore; // 현재 점수
+    public int currentHiScore; // 현재 최고 점수
+
     public Text hiScoreText;
     public Text completeText;
+    public Text gameOverText;
+    public Text restartText;
+
+    public string mainMenu;
 
     void Start()
     {
+        isLive = true;
         VHSFilter.SetActive(true);
         player = FindObjectOfType<PlayerController>();
         playerSpeed = player.moveSpeed;
@@ -58,6 +64,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        // 웨이브 스폰
         if (spawningWaves)
         {
             waveDelays[waveTracker] -= Time.deltaTime;
@@ -87,13 +94,21 @@ public class GameManager : MonoBehaviour
                 player.moveSpeed = playerSpeed; // 기본 이동속도로 변경
             }
         }
+
+        // 게임 오버 시 재시작
+        if (!isLive)
+        {
+            StartCoroutine(Restart());
+        }
     }
 
+    // 플레이어 사망
     public void KillPlayer()
     {
         playerLives--;
         liveText.text = "LIVES: " + playerLives;
 
+        // 라이프가 0보다 클 시
         if (playerLives > 0)
         {
             //spawnCounter = spawnDelay;
@@ -102,10 +117,13 @@ public class GameManager : MonoBehaviour
             player.gameObject.SetActive(false);
             player.moveSpeed = playerSpeed;
             player.doubleShot = false;
-            player.transform.position = playerSpawnPoint.position;
-            player.gameObject.SetActive(true);
-            player.shield.SetActive(true);
 
+            StartCoroutine(Respawn(spawnDelay));
+            //player.transform.position = playerSpawnPoint.position;
+            //player.gameObject.SetActive(true);
+            //player.shield.SetActive(true);
+
+            // To do. 플레이어 리스폰 딜레이
             //if (spawnCounter > 0)
             //{
             //    spawnCounter -= Time.deltaTime;
@@ -119,13 +137,17 @@ public class GameManager : MonoBehaviour
             //    }
             //}
         }
-        else // GameOver
+
+        // GameOver
+        else 
         {
+            isLive = false;
             liveText.text = "LIVES ALL LOST!";
             AudioManager.instance.PlayBgm(false);
             Instantiate(dieImpact, player.transform.position, player.transform.rotation);
             AudioManager.instance.PlaySfx(AudioManager.Sfx_1.GameOver);
             player.gameObject.SetActive(false);
+            gameOverText.text = "" + currentScore;
             gameOverScreen.SetActive(true);
 
             // 점수 저장
@@ -134,14 +156,9 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt("Hiscore", currentScore);
             }
 
+            StartCoroutine(SoundOff());
             Time.timeScale = 0.2f;
-            Invoke("SoundOff", 0.6f);
         }
-    }
-
-    public void SoundOff()
-    {
-        AudioManager.instance.StopSfx();
     }
 
     public void AdddLife()
@@ -172,11 +189,41 @@ public class GameManager : MonoBehaviour
 
     public void GameComplete()
     {
-        completeText.text = "YourScore: " + currentScore;
+        completeText.text = "" + currentScore;
     }
 
     public void GotoMain()
     {
+        SceneManager.LoadScene(mainMenu);
+    }
 
+    IEnumerator Respawn(float spawnDelay)
+    {
+        yield return new WaitForSeconds(spawnDelay);
+
+        player.transform.position = playerSpawnPoint.position;
+        player.gameObject.SetActive(true);
+        // player.shield.SetActive(true);
+
+        FindObjectOfType<PlayerController>().OnDamaged();
+    }
+
+    IEnumerator SoundOff()
+    {
+        yield return new WaitForSeconds(1.0f);
+        // Debug.Log("Sound Off");
+        AudioManager.instance.StopSfx();
+    }
+
+    IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(1.0f);
+        restartText.text = "PRESS LEFT BUTTON TO RESTART";
+
+        if (Input.GetMouseButton(0))
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("Play1");
+        }
     }
 }

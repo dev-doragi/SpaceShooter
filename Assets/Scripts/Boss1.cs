@@ -156,15 +156,9 @@ public class Boss1 : MonoBehaviour
             if (mainHealth <= 0)
             {
                 // boss die effect ¸¸µé±â
-                Instantiate(explosion, shotPoint3.transform.position, shotPoint3.transform.rotation);
-                Instantiate(explosion, shotPoint4.transform.position, shotPoint4.transform.rotation);
-                Instantiate(explosion, bottomLaserHand.transform.position, bottomLaserHand.transform.rotation);
-                Instantiate(explosion, shotPoint1.transform.position, shotPoint1.transform.rotation);
-                Instantiate(mainExplosion, thsBoss.transform.position, thsBoss.transform.rotation);
-
-
                 phase3 = false;
-                Invoke("BossDie", 1.7f);
+                // Invoke("BossDie", 1.7f);
+                StartCoroutine(BossDie_2());
                 phase4 = true;
                 shotCounter = 999;
             }
@@ -188,6 +182,39 @@ public class Boss1 : MonoBehaviour
 
     public void BossDie()
     {
+        AudioManager.instance.PlaySfx(AudioManager.Sfx_2.BossExplosion);
+        thsBoss.SetActive(false);
+    }
+
+    IEnumerator BossDie_2()
+    {
+        yield return new WaitForSeconds(0f);
+        Instantiate(mainExplosion, thsBoss.transform.position, thsBoss.transform.rotation);
+
+        yield return new WaitForSeconds(0.01f);
+        Instantiate(explosion, shotPoint3.transform.position, shotPoint3.transform.rotation);
+
+        yield return new WaitForSeconds(0.19f);
+        // Instantiate(explosion, shotPoint3.transform.position, shotPoint3.transform.rotation);
+        AudioManager.instance.PlaySfx(AudioManager.Sfx_1.Explosion);
+
+        yield return new WaitForSeconds(0.2f);
+        // Instantiate(explosion, bottomLaserHand.transform.position, bottomLaserHand.transform.rotation);
+        AudioManager.instance.PlaySfx(AudioManager.Sfx_1.Explosion);
+
+        yield return new WaitForSeconds(0.07f);
+        // Instantiate(explosion, shotPoint1.transform.position, shotPoint1.transform.rotation);
+        AudioManager.instance.PlaySfx(AudioManager.Sfx_1.Explosion);
+
+        yield return new WaitForSeconds(0.13f);
+        Instantiate(explosion, shotPoint4.transform.position, bottomLaserHand.transform.rotation);
+        // AudioManager.instance.PlaySfx(AudioManager.Sfx_1.Explosion);
+
+        yield return new WaitForSeconds(0.2f);
+        // Instantiate(explosion, shotPoint3.transform.position, shotPoint3.transform.rotation);
+        AudioManager.instance.PlaySfx(AudioManager.Sfx_1.Explosion);
+
+        yield return new WaitForSeconds(0.6f);
         AudioManager.instance.PlaySfx(AudioManager.Sfx_2.BossExplosion);
         thsBoss.SetActive(false);
     }

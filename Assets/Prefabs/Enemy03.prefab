@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shieldBreak: {fileID: 150009187002679798, guid: f4076a6abca16c04085ec564386e7a54, type: 3}
+  explosionEffect: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
 --- !u!114 &-5372621205787114546
 MonoBehaviour:
   m_ObjectHideFlags: 0

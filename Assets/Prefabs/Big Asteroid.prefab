@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 162238572395027262}
   - component: {fileID: 3027205870308253706}
   - component: {fileID: 4677739972872186288}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -189,7 +188,7 @@ GameObject:
   - component: {fileID: 3321605308147315268}
   - component: {fileID: 6245109615753296293}
   - component: {fileID: 7897515895924862264}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +336,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -353,7 +351,7 @@ GameObject:
   - component: {fileID: 5267371679404141208}
   - component: {fileID: 7891262877132541185}
   - component: {fileID: 7969289224687058930}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5185,7 +5183,7 @@ GameObject:
   - component: {fileID: 4911261305574687804}
   - component: {fileID: 2252673114979833025}
   - component: {fileID: 5453043393036001342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5333,7 +5331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -5351,7 +5348,7 @@ GameObject:
   - component: {fileID: 4484394046355070497}
   - component: {fileID: 2605912539279594026}
   - component: {fileID: 3711478611139440038}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5499,7 +5496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -5517,7 +5513,7 @@ GameObject:
   - component: {fileID: 4058411183121316477}
   - component: {fileID: 4485235617553734991}
   - component: {fileID: 7834868175784148000}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5665,7 +5661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -5683,7 +5678,7 @@ GameObject:
   - component: {fileID: 8078774007577217260}
   - component: {fileID: 6232216654887245511}
   - component: {fileID: 4162324995352197307}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5831,7 +5826,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -5849,7 +5843,7 @@ GameObject:
   - component: {fileID: 2809891379014687261}
   - component: {fileID: 2244453382281892527}
   - component: {fileID: 8507650899803818247}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5997,7 +5991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -6015,7 +6008,7 @@ GameObject:
   - component: {fileID: 5152738766226880298}
   - component: {fileID: 3041743144162364879}
   - component: {fileID: 4879585327040038267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6163,7 +6156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -6181,7 +6173,7 @@ GameObject:
   - component: {fileID: 7294053452547857648}
   - component: {fileID: 2491856890843479175}
   - component: {fileID: 7004088268688499169}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6329,7 +6321,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0
@@ -6347,7 +6338,7 @@ GameObject:
   - component: {fileID: 7105252457771398984}
   - component: {fileID: 4695606324029354887}
   - component: {fileID: 8186505350806119282}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big Asteroid (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6495,7 +6486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60890adca1edcca4a833b4b6de2d0ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
   enemyDieImpact: {fileID: 3999412840062160804, guid: c9a17d59079843e46aaf43cf6fbca58b, type: 3}
   moveSpeedX: 4
   moveSpeedY: 0

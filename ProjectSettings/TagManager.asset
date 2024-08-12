@@ -14,14 +14,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Asteroid
   - Water
   - UI
   - Enemy
   - Player
   - PostProcessing
   - 
-  - 
+  - OnDamaged
   - 
   - 
   - 

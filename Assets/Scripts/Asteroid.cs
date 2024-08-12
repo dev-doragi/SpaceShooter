@@ -28,7 +28,6 @@ public class Asteroid : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //Instantiate(playerDieImpact, other.transform.position, other.transform.rotation);
             FindObjectOfType<GameManager>().KillPlayer();
         }
 

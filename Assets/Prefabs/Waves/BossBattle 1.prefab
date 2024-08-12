@@ -90,7 +90,7 @@ Transform:
   m_GameObject: {fileID: 2941125527870496246}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.31, y: 0, z: 0}
+  m_LocalPosition: {x: 1.46, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -200,7 +200,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.97, y: 6.78125}
+  m_Size: {x: 1.04, y: 4.44}
   m_EdgeRadius: 0
 --- !u!50 &8927308570693655347
 Rigidbody2D:
@@ -303,8 +303,8 @@ MonoBehaviour:
   mainExplosion: {fileID: 5974049638264371457, guid: ec7623bc0889db348926a82182593e0e, type: 3}
   mainHealth: 5
   shotDelay2: 0.5
-  levelWinScreen: {fileID: 3885994513736785014, guid: 574bfb391fdf2114ab788a14c01a8940, type: 3}
-  timeToLevelWin: 3
+  levelWinScreen: {fileID: 4642658899237895018, guid: 0274a5642cff4ef488f4da6304a93ad0, type: 3}
+  timeToLevelWin: 5
 --- !u!1 &3772974091982755957
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +330,7 @@ Transform:
   m_GameObject: {fileID: 3772974091982755957}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.2, y: 2.5, z: 0}
+  m_LocalPosition: {x: -6.3399997, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -740,7 +740,7 @@ Transform:
   m_GameObject: {fileID: 7196660142488678843}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.2, y: -2.5, z: 0}
+  m_LocalPosition: {x: -6.3399997, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

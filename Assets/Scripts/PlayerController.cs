@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    SpriteRenderer spriteRenderer;
+    public Transform[] children;
+
     private Rigidbody2D rb;
 
     public float moveSpeed;
@@ -30,7 +33,10 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+
+        children = gameObject.GetComponentsInChildren<Transform>();
     }
 
     void Update()
@@ -83,5 +89,29 @@ public class PlayerController : MonoBehaviour
                 shotCounter = shotDelay;
             }
         }
+    }
+
+    public void OnDamaged()
+    {
+        //layer변화
+
+        for(int i=0; i < children.Length; i++)
+        {
+            children[i].gameObject.layer = 10;
+        }
+
+        //피격시 색깔변화
+        spriteRenderer.color = new Color(1, 1, 1, 0.4f);// 4번째 인자는 투명도
+        Invoke("OffDamaged", 2);
+    }
+
+    public void OffDamaged()
+    {
+        for (int i = 0; i < children.Length; i++)
+        {
+            children[i].gameObject.layer = 7;
+        }
+
+        spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 }

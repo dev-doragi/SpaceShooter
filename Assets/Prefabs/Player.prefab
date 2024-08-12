@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5330865182671474611}
   - component: {fileID: 8142075436393700929}
   - component: {fileID: 1804158832129044579}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4839,7 +4839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5774849404746085047}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DoublePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -4872,7 +4872,7 @@ GameObject:
   - component: {fileID: 4727318009622044642}
   - component: {fileID: 7888438515723978985}
   - component: {fileID: 2145007265732673515}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ZetFlame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4976,7 +4976,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6702236992056675594}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DoublePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -5012,7 +5012,7 @@ GameObject:
   - component: {fileID: 3429980270514389753}
   - component: {fileID: 514430523804369192}
   - component: {fileID: 1938391142536976854}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5216,7 +5216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2358125401155375765}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
