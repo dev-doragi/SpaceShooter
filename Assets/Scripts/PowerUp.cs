@@ -6,12 +6,9 @@ public class PowerUp : MonoBehaviour
 {
     public bool isShield;
     public bool isSpeed;
+    public bool isDouble;
+    public bool isExtraLife;
     public float moveSpeed;
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -27,12 +24,28 @@ public class PowerUp : MonoBehaviour
             if (isShield)
             {
                 other.gameObject.GetComponent<PlayerController>().shield.SetActive(true);
+                AudioManager.instance.PlaySfx(AudioManager.Sfx_2.PowerUp);
                 Destroy(gameObject);
             }
 
             else if (isSpeed)
             {
                 FindObjectOfType<GameManager>().ActivateSpeedPower();
+                AudioManager.instance.PlaySfx(AudioManager.Sfx_2.PowerUp);
+                Destroy(gameObject);
+            }
+
+            else if (isDouble)
+            {
+                other.GetComponent<PlayerController>().doubleShot = true;
+                AudioManager.instance.PlaySfx(AudioManager.Sfx_2.PowerUp);
+                Destroy(gameObject);
+            }
+
+            else if (isExtraLife)
+            {
+                FindObjectOfType<GameManager>().AdddLife();
+                AudioManager.instance.PlaySfx(AudioManager.Sfx_2.LifeUp);
                 Destroy(gameObject);
             }
         }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6142684360169982219}
   - component: {fileID: 2511150882277843792}
   - component: {fileID: 1698128613069830865}
+  - component: {fileID: 3644548304445440201}
   m_Layer: 6
   m_Name: Enemy04
   m_TagString: Enemy
@@ -208,7 +209,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475ddcf4ff95cca48888b9555506e7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
+  shieldBreak: {fileID: 150009187002679798, guid: f4076a6abca16c04085ec564386e7a54, type: 3}
+--- !u!114 &3644548304445440201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304502040315475906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4ec4ff37f488b245884c3186334a760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 100
 --- !u!1 &1546926158000535096
 GameObject:
   m_ObjectHideFlags: 0

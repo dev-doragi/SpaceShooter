@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: -12
-  bulletImpact: {fileID: 150009187002679798, guid: c9513e8cee175fc418d10bfcbb3885fe, type: 3}
+  laserImpact: {fileID: 150009187002679798, guid: c9513e8cee175fc418d10bfcbb3885fe, type: 3}
   dieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
+  shieldBreak: {fileID: 150009187002679798, guid: f4076a6abca16c04085ec564386e7a54, type: 3}
   isEnemy: 1

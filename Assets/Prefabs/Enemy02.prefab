@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 11995074614030219}
   - component: {fileID: 7325776561642019941}
   - component: {fileID: 5195996999657835778}
+  - component: {fileID: -1796173651171510393}
   m_Layer: 6
   m_Name: Enemy02
   m_TagString: Enemy
@@ -165,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeedX: 3
   moveSpeedY: 4
+  rotateSpeed: 0
   XTarget: 2
   YTarget: 2
   moveType: 2
@@ -196,4 +198,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475ddcf4ff95cca48888b9555506e7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dieImpact: {fileID: 8000117011932069479, guid: d7a78d4731233d249b4e8621ba27cefc, type: 3}
+  shieldBreak: {fileID: 150009187002679798, guid: f4076a6abca16c04085ec564386e7a54, type: 3}
+--- !u!114 &-1796173651171510393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078334053373189520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4ec4ff37f488b245884c3186334a760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 100

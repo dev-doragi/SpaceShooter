@@ -17,6 +17,7 @@ public class EnemyAttack : MonoBehaviour
         if (shotCounter <= 0)
         {
             Instantiate(bullet, bulletPoint.position, bulletPoint.rotation);
+            AudioManager.instance.PlaySfx(AudioManager.Sfx_1.EnemyLaser);
 
             shotCounter = shotDelay;
         }

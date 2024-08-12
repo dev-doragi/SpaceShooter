@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
 
     public GameObject shield;
 
+    public bool doubleShot;
+    public Transform doubleShot1;
+    public Transform doubleShot2;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -43,8 +47,18 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(bullet, bulletPoint.position, bulletPoint.rotation);
-
+            if (doubleShot)
+            {
+                AudioManager.instance.PlaySfx(AudioManager.Sfx_1.PlayerLaser);
+                Instantiate(bullet, doubleShot1.position, doubleShot1.rotation);
+                Instantiate(bullet, doubleShot2.position, doubleShot2.rotation);
+            }
+            else
+            {
+                AudioManager.instance.PlaySfx(AudioManager.Sfx_1.PlayerLaser);
+                Instantiate(bullet, bulletPoint.position, bulletPoint.rotation);
+            }
+    
             shotCounter = shotDelay;
         }
 
@@ -54,7 +68,17 @@ public class PlayerController : MonoBehaviour
 
             if (shotCounter <= 0)
             {
-                Instantiate(bullet, bulletPoint.position, bulletPoint.rotation);
+                if(doubleShot)
+                {
+                    AudioManager.instance.PlaySfx(AudioManager.Sfx_1.PlayerLaser);
+                    Instantiate(bullet, doubleShot1.position, doubleShot1.rotation);
+                    Instantiate(bullet, doubleShot2.position, doubleShot2.rotation);
+                }
+                else
+                {
+                    AudioManager.instance.PlaySfx(AudioManager.Sfx_1.PlayerLaser);
+                    Instantiate(bullet, bulletPoint.position, bulletPoint.rotation);
+                }
 
                 shotCounter = shotDelay;
             }

@@ -135,4 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isShield: 0
   isSpeed: 1
-  moveSpeed: 1.5
+  isDouble: 0
+  isExtraLife: 0
+  moveSpeed: 1.2

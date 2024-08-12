@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    public GameObject playerDieImpact;
+    //public GameObject playerDieImpact;
     public GameObject enemyDieImpact;
 
     public float moveSpeedX;
@@ -28,13 +28,14 @@ public class Asteroid : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Instantiate(playerDieImpact, other.transform.position, other.transform.rotation);
-            Destroy(other.gameObject);
+            //Instantiate(playerDieImpact, other.transform.position, other.transform.rotation);
+            FindObjectOfType<GameManager>().KillPlayer();
         }
 
         if (other.gameObject.CompareTag("Enemy"))
         {
             Instantiate(enemyDieImpact, other.transform.position, other.transform.rotation);
+            AudioManager.instance.PlaySfx(AudioManager.Sfx_1.Explosion);
             Destroy(other.gameObject);
         }
     }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6367873395862187325}
   m_Layer: 0
-  m_Name: wave5
+  m_Name: Wave5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,7 +415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8808050755516761815, guid: 817ce5fc0470ab7499aff587429a871d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 8808050755516761815, guid: 817ce5fc0470ab7499aff587429a871d, type: 3}
       propertyPath: m_LocalPosition.z
